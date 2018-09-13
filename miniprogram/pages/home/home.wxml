@@ -1,4 +1,8 @@
 <!--pages/home/home.wxml-->
 <view class='container'>
-    <image src='../../images/bg-first.png' class='bgImg'></image>
+    <image src='../../static/images/bg-first.png' class='bgImg'></image>
+    <image src='../../static/images/title.png' class='title'></image>
+    <view class='introducer intro-left'>识食物者为俊杰。中国34省区，</view>
+    <view class='introducer intro-right'>特色小吃琳琅满目，你吃过多少？</view>
+    <button class='btn-begin'>开始</button>
 </view>
