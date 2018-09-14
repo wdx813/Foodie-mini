@@ -1,2 +1,26 @@
 <!--pages/result/result.wxml-->
-<text>pages/result/result.wxml</text>
+<view class='container'>
+    <image src='../../static/images/bg-result.png' class='bgImg'></image>
+    <view class='result-info'>
+        <view class='nickname'>用户昵称</view>
+        <view class='info'>吃遍了中国XX个省区</view>
+        <view class='info'>吃遍了中国XXX个市</view>
+        <view class='info'>超越了中国XX的用户</view>
+    </view>
+    <view class='option-box'>
+        <view class='option-item'>
+            <image src='../../static/images/icon-share.png' class='icon-share'></image>
+            <view class='option-name'>转发到群</view>
+        </view>
+        <view class='option-item option-middle'>
+            <image src='../../static/images/icon-circle.png' class='icon-circle'></image>
+            <view class='option-name'>生成图片分享好友</view>
+        </view>
+        <view class='option-item'>
+            <image src='../../static/images/icon-repeat.png' class='icon-repeat'></image>
+            <view class='option-name'>重选</view>
+        </view>
+    </view>
+
+    <canvas canvas-id='shareCanvas' class='shareCanvas'></canvas>
+</view>

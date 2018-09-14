@@ -1,2 +1,75 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view class='container'>
+    <image src='../../static/images/bg-list.png' class='bgImg'></image>
+    <view class='list-container'>
+        <view class='list-box'>
+            <view class='list-left'>
+                <view class='tip'>选择你吃过的美食</view>
+                <scroll-view scroll-y enable-back-to-top='true' class='scroll-left'>
+                    <view class='list'>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                            <image src='../../static/images/icon-selected.png' class='icon-selected'></image>
+                            <view class='foodName'>我是美哈哈时</view>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                            <image src='../../static/images/icon-selected.png' class='icon-selected'></image>
+                            <view class='foodName'>我是美食</view>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                            <image src='../../static/images/icon-selected.png' class='icon-selected'></image>
+                            <view class='foodName'>我是美食</view>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                            <image src='../../static/images/icon-selected.png' class='icon-selected'></image>
+                            <view class='foodName'>我是美食</view>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                            <image src='../../static/images/icon-selected.png' class='icon-selected'></image>
+                            <view class='foodName'>我是美食</view>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                        <view class='list-item'>
+                            <image src='../../static/images/test.jpg' class='foodImg'></image>
+                        </view>
+                    </view>
+                </scroll-view>
+                <button class='btn-submit'>提交</button>
+            </view>
+
+            <view class='list-right'>
+                <scroll-view class='scroll-right' scroll-y enable-back-to-top='true'>
+                    <view class='province-list'>
+                        <block wx:for='{{provinces}}' wx:key='unique'>
+                            <view class='province {{currentProvince == item.id ? "province-selected" : ""}}' id='{{item.id}}' bindtap='bindTapProvince'>{{item.name}}</view>
+                        </block>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+</view>
